@@ -1,0 +1,106 @@
+/* Define o estilo do corpo da página */
+body {
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do corpo */
+}
+
+/* Estilo para todos os botões */
+button {
+    width: 220px; /* Define a largura do botão */
+    height: 45px; /* Define a altura do botão */
+    top: 27px; /* Define a posição vertical do botão  */
+    left: 510px; /* Define a posição horizontal do botão  */
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do botão */
+}
+
+/* Estilo para botões do Instagram (não está correto, falta o ponto antes do nome da classe) */
+buttonIG {
+    width: 60px; /* Define a largura do botão do Instagram */
+    height: 60px; /* Define a altura do botão do Instagram */
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do botão do Instagram */
+}
+
+/* Estilo para o título */
+.titulo {
+    font-size: 40px; /* Define o tamanho da fonte do título */
+    color: rgb(107, 96, 88); /* Define a cor do texto do título */
+    display: flex; /* Define o layout como flexível */
+    padding-left: 200px; /* Adiciona espaço à esquerda do título */
+}
+
+/* Estilo para a seção de e-mail */
+.e-mail {
+    font-size: 20px; /* Define o tamanho da fonte do e-mail */
+    color: rgb(107, 96, 88); /* Define a cor do texto do e-mail */
+    display: flex; /* Define o layout como flexível */
+    padding-left: 200px; /* Adiciona espaço à esquerda do e-mail */
+}
+
+/* Estilo para o contêiner principal */
+.box {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Alinha os itens em linha (horizontalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para a seção secundária */
+.sec {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Alinha os itens em coluna (verticalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para o contêiner de botões */
+.ebut {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Alinha os itens em linha (horizontalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para os links */
+.liinks {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Alinha os itens em linha (horizontalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para a seção de links */
+.links {
+    color: rgb(107, 96, 88); /* Define a cor do texto dos links */
+    font-size: 30px; /* Define o tamanho da fonte dos links */
+    justify-items: center; /* Alinha os itens no centro  */
+}
+
+/* Estilo para botões sem borda */
+.btn {
+    border: none; /* Remove a borda dos botões */
+}
+
+/* Estilo para o botão do WhatsApp */
+.buttonWPP {
+    display: flex; /* Define o layout como flexível */
+    align-items: flex-start; /* Alinha os itens no início do contêiner */
+}
+
+/* Estilo para a seção de links */
+.elinks {
+    display: flex; /* Define o layout como flexível */
+    margin-top: 217px; /* Adiciona margem superior à seção de links */
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    button {
+        width: 110px; /* Reduz a largura do botão em telas menores */
+        height: 45px; /* Mantém a altura do botão */
+        top: 27px; /* Mantém a posição vertical do botão */
+        left: 510px; /* Mantém a posição horizontal do botão */
+    }
+    img {
+        height: 350px; /* Define a altura das imagens em telas menores */
+        width: 350px; /* Define a largura das imagens em telas menores */
+        margin-left: 17px; /* Adiciona margem à esquerda das imagens */
+        margin-right: 10px; /* Adicion */
+
+    }
+}
+    

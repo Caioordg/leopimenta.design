@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do corpo da página */
+}
+
+.container {
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: row; /* Alinha os itens em uma linha */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+.box {
+    display: flex; /* Usa o modelo de layout flexível para o bloco */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.titulo {
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    color: rgb(63, 57, 53); /* Define a cor do texto */
+    font-size: 60px; /* Define o tamanho da fonte */
+}
+
+.titulo2 {
+    color: rgb(63, 57, 53); /* Define a cor do texto do subtítulo */
+    font-family: 'Body Grotesque Fit Trial', sans-serif; /* Define a fonte do subtítulo */
+    position: relative; /* Permite o posicionamento relativo do elemento */
+    top: -80px; /* Move o subtítulo 80 pixels para cima em relação à sua posição original */
+}
+
+button {
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do botão */
+    width: 220px; /* Define a largura do botão */
+    height: 45px; /* Define a altura do botão */
+    top: 27px; /* Move o botão 27 pixels para baixo em relação à sua posição original */
+    left: 510px; /* Move o botão 510 pixels para a esquerda em relação à sua posição original */
+}
+
+#textobnt {
+    text-align: center; /* Centraliza o texto dentro do elemento com ID 'textobnt' */
+    align-items: center; /* Alinha os itens verticalmente no centro (não tem efeito aqui, pois não é um flex container) */
+}
+
+@media screen and (max-width: 768px) { /* Define estilos para telas com largura máxima de 768 pixels (dispositivos móveis) */
+    .container {
+        position: relative; /* Permite o posicionamento relativo do contêiner */
+        flex-direction: column; /* Alinha os itens em uma coluna em vez de uma linha */
+        justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        margin: 0; /* Remove a margem do contêiner */
+        border: 0; /* Remove a borda do contêiner */
+        padding: 0; /* Remove o preenchimento do contêiner */
+    }
+    
+    .titulo {
+        font-size: 50px; /* Reduz o tamanho da fonte do título para 50 pixels em telas menores */
+    }
+
+    .foto1 {
+        display: none; /* Esconde a imagem com a classe 'foto1' em telas menores */
+    }
+}

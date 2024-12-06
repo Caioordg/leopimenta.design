@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do corpo da página */
+}
+
+button {
+    width: 220px; /* Define a largura do botão */
+    height: 45px; /* Define a altura do botão */
+    top: 27px; /* Define a posição vertical do botão  */
+    left: 510px; /* Define a posição horizontal do botão  */
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do botão */
+}
+
+.box {
+    display: flex; /* Usa o modelo de layout flexível para o bloco */
+    flex-direction: row; /* Alinha os itens dentro do bloco em uma linha */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+.texto {
+    color: rgb(63, 57, 53); /* Define a cor do texto dentro do bloco */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-items: center; /* Alinha os itens horizontalmente no centro  */
+}
+
+.historia {
+    height: 400px; /* Define a altura do bloco de história */
+    width: 500px; /* Define a largura do bloco de história */
+    font-size: 20px; /* Define o tamanho da fonte do texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Define a família de fontes do texto */
+    color: rgb(63, 57, 53); /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+}
+
+.container {
+    display: flex; /* Usa o modelo de layout flexível para o contêiner */
+    flex-direction: column; /* Alinha os itens dentro do contêiner em uma coluna */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+.qs {
+    font-size: 40px; /* Define o tamanho da fonte para a seção "Quem Sou" */
+}
+
+.botoes {
+    display: flex; /* Usa o modelo de layout flexível para o bloco de botões */
+    flex-direction: row; /* Alinha os botões em uma linha */
+    justify-content: space-evenly; /* Distribui os botões com espaço igual entre eles */
+    position: relative; /* Permite o posicionamento relativo do bloco de botões */
+    top: 60px; /* Move o bloco de botões 60 pixels para baixo em relação à sua posição original */
+}
+
+@media screen and (max-width: 768px) { /* Define estilos para telas com largura máxima de 768 pixels (dispositivos móveis) */
+    .container {
+        display: block; /* Altera o contêiner para um layout de bloco em telas menores */
+    }
+
+    .box {
+        display: block; /* Altera o bloco para um layout de bloco em telas menores */
+    }
+
+    .botoes {
+        display: block; /* Altera o bloco de botões para um layout de bloco em telas menores */
+        text-align: center; /* Centraliza os botões dentro do bloco */
+    }
+
+    .historia {
+        height: 700px; /* Aumenta a altura do bloco de história em telas menores */
+        width: 300px; /* Diminui a largura do bloco de história em telas menores */
+    }
+
+    img {
+        margin-left: 17px; /* Adiciona uma margem à esquerda da imagem */
+        margin-right: 10px; /* Adiciona uma margem à direita da imagem */
+        height: 350px; /* Define a altura da imagem */
+        width: 350px; /* Define a largura da imagem */
+    }
+}

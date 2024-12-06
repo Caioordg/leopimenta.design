@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do corpo da página */
+}
+
+button {
+    width: 220px; /* Define a largura do botão */
+    height: 45px; /* Define a altura do botão */
+    top: 27px; /* Define a posição vertical do botão */
+    left: 510px; /* Define a posição horizontal do botão  */
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do botão */
+}
+
+.titulo {
+    display: flex; /* Usa o modelo de layout flexível para o título */
+    justify-content: center; /* Centraliza o título horizontalmente */
+    font-size: 40px; /* Define o tamanho da fonte do título */
+    color: rgb(107, 96, 88); /* Define a cor do texto do título */
+}
+
+.container2 {
+    display: flex; /* Usa o modelo de layout flexível para o contêiner */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+   
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.titulo {
+    scroll-margin-top: -110px; /* Ajusta a margem de rolagem do título (pode ser usado para compensar um cabeçalho fixo) */
+}
+
+.container {
+    display: flex; /* Usa o modelo de layout flexível para o contêiner de projetos */
+    flex-direction: row; /* Alinha os itens dentro do contêiner em uma linha */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+    border-top-right-radius: 150px; /* Arredonda o canto superior direito do contêiner */
+}
+
+.button {
+    display: flex; /* Usa o modelo de layout flexível para o contêiner de botões */
+    flex-direction: row; /* Alinha os botões em uma linha */
+    justify-content: space-evenly; /* Distribui os botões com espaço igual entre eles */
+}
+
+.imagem2, .imagem3, .imagem { /* Estilos comuns para os blocos de imagem */
+    display: flex; /* Usa o modelo de layout flexível para os blocos de imagem */
+    flex-direction: column; /* Alinha os itens dentro do bloco em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente dentro do bloco */
+    
+}
+
+@media screen and (max-width: 768px) { /* Define estilos para telas com largura máxima de 768 pixels (dispositivos móveis) */
+    .container {
+        display: block; /* Altera o contêiner para um layout de bloco em telas menores */
+        justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles (não tem efeito em um contêiner de bloco) */
+    }
+      
+    img {
+        height: 350px; /* Define a altura das imagens em telas menores */
+        width: 350px; /* Define a largura das imagens em telas menores */
+    }
+}
